@@ -1,5 +1,5 @@
 [![Latest version](https://img.shields.io/maven-central/v/net.litetex/standard-maven-template?logo=apache%20maven)](https://mvnrepository.com/artifact/net.litetex/standard-maven-template)
-[![Build](https://img.shields.io/github/actions/workflow/status/litetex-oss/standard-maven-template/checkBuild.yml?branch=develop)](https://github.com/litetex-oss/standard-maven-template/actions/workflows/checkBuild.yml?query=branch%3Adevelop)
+[![Build](https://img.shields.io/github/actions/workflow/status/litetex-oss/standard-maven-template/checkBuild.yml?branch=dev)](https://github.com/litetex-oss/standard-maven-template/actions/workflows/checkBuild.yml?query=branch%3Adev)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=litetex-oss_standard-maven-template&metric=alert_status)](https://sonarcloud.io/dashboard?id=litetex-oss_standard-maven-template)
 
 # standard-maven-template

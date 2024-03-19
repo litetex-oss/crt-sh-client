@@ -3,12 +3,13 @@ name: Sonar
 on:
   workflow_dispatch:
   push:
-    branches: [ develop ]
+    branches: [ dev ]
     paths-ignore: 
       - '**.md'
       - '.config/**'
       - '.github/**'
       - '.idea/**'
+      - '.run/**'
       - 'assets/**'
   pull_request:
     types: [opened, synchronize, reopened]
@@ -17,6 +18,7 @@ on:
       - '.config/**'
       - '.github/**'
       - '.idea/**'
+      - '.run/**'
       - 'assets/**'
 
 env:
