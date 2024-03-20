@@ -5,9 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>net.litetex</groupId>
-	<artifactId>standard-maven-template-demo</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<artifactId>crt-sh-client-demo</artifactId>
+	<version>1.0.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
+
+	<inceptionYear>2022</inceptionYear>
 
 	<properties>
 		<javaVersion>17</javaVersion>
@@ -17,13 +19,28 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<mainClass>net.litetex.Application</mainClass>
+
+		<log4j2-version>2.23.1</log4j2-version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>net.litetex</groupId>
-			<artifactId>standard-maven-template</artifactId>
+			<artifactId>crt-sh-client</artifactId>
 			<version>${project.version}</version>
+		</dependency>
+
+		<!-- Logging -->
+		<!-- SLF4J comes from Apache Httpclient -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j2-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>${log4j2-version}</version>
 		</dependency>
 	</dependencies>
 
@@ -34,7 +51,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.12.1</version>
+				<version>3.13.0</version>
 				<configuration>
 					<release>${maven.compiler.release}</release>
 					<compilerArgs>
@@ -45,7 +62,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
-				<version>3.7.0</version>
+				<version>3.7.1</version>
 				<configuration>
 					<archive>
 						<manifest>
@@ -85,7 +102,7 @@
 							<dependency>
 								<groupId>com.puppycrawl.tools</groupId>
 								<artifactId>checkstyle</artifactId>
-								<version>10.14.1</version>
+								<version>10.14.2</version>
 							</dependency>
 						</dependencies>
 						<configuration>

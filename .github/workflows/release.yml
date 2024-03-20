@@ -92,8 +92,8 @@ jobs:
         release_name: v${{ steps.version.outputs.release }}
         commitish: master
         body: |
-          ## [Changelog](https://github.com/litetex-oss/${{ env.PRIMARY_MAVEN_MODULE }}/blob/develop/CHANGELOG.md#${{ steps.version.outputs.releasenumber }})
-          See [Changelog#v${{ steps.version.outputs.release }}](https://github.com/litetex-oss/${{ env.PRIMARY_MAVEN_MODULE }}/blob/develop/CHANGELOG.md#${{ steps.version.outputs.releasenumber }}) for more information.
+          ## [Changelog](https://github.com/litetex-oss/${{ env.PRIMARY_MAVEN_MODULE }}/blob/dev/CHANGELOG.md#${{ steps.version.outputs.releasenumber }})
+          See [Changelog#v${{ steps.version.outputs.release }}](https://github.com/litetex-oss/${{ env.PRIMARY_MAVEN_MODULE }}/blob/dev/CHANGELOG.md#${{ steps.version.outputs.releasenumber }}) for more information.
 
           ## Installation
           Add the following lines to your pom:
@@ -226,6 +226,6 @@ jobs:
         gh_pr_up() { 
           gh pr create "$@" || gh pr edit "$@" 
         }
-        gh_pr_up -B "develop" \
+        gh_pr_up -B "dev" \
           --title "Sync back" \
           --body "An automated PR to sync changes back"
