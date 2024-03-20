@@ -5,9 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>net.litetex</groupId>
-	<artifactId>standard-maven-template-demo</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<artifactId>crt-sh-client-demo</artifactId>
+	<version>1.0.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
+
+	<inceptionYear>2022</inceptionYear>
 
 	<properties>
 		<javaVersion>17</javaVersion>
@@ -17,13 +19,28 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<mainClass>net.litetex.Application</mainClass>
+
+		<log4j2-version>2.23.1</log4j2-version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>net.litetex</groupId>
-			<artifactId>standard-maven-template</artifactId>
+			<artifactId>crt-sh-client</artifactId>
 			<version>${project.version}</version>
+		</dependency>
+
+		<!-- Logging -->
+		<!-- SLF4J comes from Apache Httpclient -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j2-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>${log4j2-version}</version>
 		</dependency>
 	</dependencies>
 
