@@ -42,7 +42,6 @@ import java.util.StringJoiner;
   Certificate.JSON_PROPERTY_SERIAL_NUMBER,
   Certificate.JSON_PROPERTY_RESULT_COUNT
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class Certificate {
   public static final String JSON_PROPERTY_ISSUER_CA_ID = "issuer_ca_id";
   private Long issuerCaId;

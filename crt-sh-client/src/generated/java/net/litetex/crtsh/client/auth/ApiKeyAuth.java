@@ -18,7 +18,6 @@ import net.litetex.crtsh.client.Pair;
 import java.util.Map;
 import java.util.List;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class ApiKeyAuth implements Authentication {
   private final String location;
   private final String paramName;

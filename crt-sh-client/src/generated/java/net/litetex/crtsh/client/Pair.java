@@ -13,7 +13,6 @@
 
 package net.litetex.crtsh.client;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen")
 public class Pair {
     private String name = "";
     private String value = "";
