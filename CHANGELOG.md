@@ -1,3 +1,6 @@
+# 1.0.4
+* Updated to OpenAPI Generator 7.4
+
 # 1.0.3
 * Updated dependencies
 * Migrated repository to organization
